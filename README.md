@@ -22,7 +22,7 @@ The Buddy System minimizes fragmentation by splitting and merging memory blocks 
 ### Installation  
 1. Clone this repository:  
    
-    git clone https://github.com/your-username/Buddy-System-Memory-Allocator.git
+    git clone https://github.com/Thafani24/Buddy-System-Memory-Allocator.git
 
 2. Navigate to the project directory:
 
