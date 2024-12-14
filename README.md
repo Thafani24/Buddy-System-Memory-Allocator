@@ -4,13 +4,35 @@ This repository contains a Python implementation of the Buddy System, a dynamic 
 
 ## Overview  
 
-The Buddy System minimizes fragmentation by splitting and merging memory blocks into sizes that are powers of 2. This project demonstrates memory allocation, deallocation, and visualization.  
+The Buddy System minimizes fragmentation by splitting and merging memory blocks into sizes that are powers of 2.
+This project is a simulation of the Buddy Memory Allocation System, a dynamic memory management technique widely used in operating systems. The program demonstrates the allocation and deallocation of memory using a binary tree structure to minimize fragmentation and ensure efficient utilization of memory blocks.
+
 
 ### Features  
 - **Dynamic Allocation:** Handles memory requests of varying sizes.  
-- **Block Splitting:** Divides larger blocks to fit the request size.  
-- **Buddy Merging:** Combines adjacent free blocks to create larger blocks.  
-- **Visualization:** Displays memory status after each operation.  
+- **Tree-Based Visualization:** View the memory map with detailed node information (allocated, divided, or free).  
+- **Efficient Deallocation:** Reclaim and merge memory blocks when no longer needed.  
+- **Simple CLI Interface:** User-friendly console-based interface for interaction.  
+
+### Usage
+#### Menu Options:
+##### 1. Allocate Process into Memory:
+
+- Specify the size of the memory request.
+- The system attempts to allocate memory based on availability and the buddy system rules.
+
+##### 2. Remove Process from Memory:
+
+- Specify the size of the process to deallocate.
+- The system reclaims memory and merges adjacent blocks when possible.
+
+##### 3. Tree Structure of Memory Allocation Map:
+
+- View the current memory allocation as a tree, showing the state of each block.
+
+##### 4. Exit:
+
+- Close the application. 
 
 ---
 
@@ -32,5 +54,8 @@ The Buddy System minimizes fragmentation by splitting and merging memory blocks 
     python buddy_system.py
 
 > **Follow the on-screen output to observe memory allocation and deallocation.**
+
+#### Author
+- Developed as part of a university project to explore dynamic memory allocation techniques. Contributions and feedback are welcome!
 
 
